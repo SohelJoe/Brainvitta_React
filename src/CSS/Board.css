@@ -1,0 +1,60 @@
+.container {
+    width: max-content;
+}
+
+.board {
+    display: flex;
+    gap: 2vmin;
+    flex-direction: column;
+    flex-basis: content;
+    padding: 5vmin;
+    background-color: antiquewhite;
+    border-radius: 2vmin;
+    user-select: none;
+}
+
+.board .row {
+    display: flex;
+    gap: 2vmin;
+    flex-basis: content;
+}
+
+.bottomPanel {
+    display: flex;
+    width: calc(100% - 8vmin);
+    margin-top: 3vh;
+    padding: 4vmin;
+    justify-content: space-between;
+    background-color: rgb(255 255 255 / 0.15);
+    border-radius: 2vmin;
+}
+
+.bottomPanel h4 {
+    margin: 0
+}
+
+.bottomPanel .btnGrp {
+    display: flex;
+    gap: 2vmin;
+    width: max-content;
+}
+
+.bottomPanel .btnGrp button {
+    background-color: rgb(255 255 255/0.75);
+    padding: 1vmin 3vmin;
+    border-radius: 0.3vmin;
+    font-size: 2vmin;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.bottomPanel .btnGrp button:hover {
+    background-color: #fff;
+}
+
+.bottomPanel .btnGrp button:disabled {
+    background-color: rgb(255 255 255/0.75);
+    opacity: 0.5;
+}
